@@ -4,11 +4,15 @@
 
 <h1 align="center">Better Words</h1>
 
-<p align="center"><strong>AI chat and text shortcuts for macOS.</strong></p>
+<p align="center"><strong>AI shortcuts for selected text on macOS.</strong></p>
 
 <p align="center">
-  Select text in the app you're using and run an AI action with a shortcut.
-  Better Words opens the result in a floating panel.
+  Select text where you're working, then press a shortcut to improve a prompt,
+  translate a passage, or apply your own instructions.
+</p>
+
+<p align="center">
+  English · <a href="./README.zh-CN.md">简体中文</a> · <a href="./README.ko.md">한국어</a>
 </p>
 
 <p align="center">
@@ -18,49 +22,45 @@
   · <a href="#demo">Demo</a>
 </p>
 
-<p align="center">macOS 14 or later · Apple silicon and Intel · Windows coming soon</p>
+<p align="center">macOS 14 or later · Apple silicon and Intel</p>
+
+Text actions require Better Words Pro and a configured AI provider.
 
 ## Features
 
-### Chat anywhere
+### Better Prompt
 
-Open a chat with a system-wide shortcut. Ask about a passage you're reading or start with a blank question. The response can keep running in the background while you work.
+Select a rough prompt and run **Better Prompt**. It turns your draft into a prompt you can give to another AI, keeping your intent and constraints intact. You can edit the result in the floating panel, copy it, or replace the original text when the selection is editable.
 
-<img src="./assets/chat-anywhere.png" width="610" alt="Better Words explaining a passage from a scanned physics paper in a floating chat panel">
+<img src="./assets/better-prompt.png" width="610" alt="Better Prompt turning a selected draft in Notes into a structured prompt">
 
-### Translate text and look up words
+### Translate
 
-Translate a sentence or paragraph with the same shortcut you use to look up a word. For individual words, Better Words shows meanings, pronunciation when available, common collocations, and example sentences.
+Select a sentence or passage for a translation. With the default Chinese–English pair, **Translate** detects which of the two languages you selected and translates into the other. You can change the language pair in Settings. Select a single word or idiom to see its meaning, pronunciation when available, common collocations, and examples with translations.
 
 <img src="./assets/translate-preview.png" width="610" alt="The word Glassmorphism selected in Notes, with its pronunciation and Chinese definition in Better Words">
 
-### Turn rough notes into prompts
+### Screenshot OCR
 
-Expert Prompt rewrites a rough request with clearer instructions and explicit constraints. Review the result in the floating panel, then copy it into the AI tool you use.
-
-<img src="./assets/expert-prompt.png" width="610" alt="Expert Prompt turning a paragraph of notes into a structured list of requirements">
-
-### Read text from images with OCR
-
-Drag over a screen region to read text from a scanned PDF, photo, or screenshot. Send the recognized text to Translate, Chat, or another action.
+When text is embedded in a scanned PDF or image, choose an OCR action and drag over the relevant part of your screen. Better Words recognizes the text on your Mac, shows it in the panel, and runs the action on it.
 
 <img src="./assets/screenshot-ocr.png" width="680" alt="Recognized English text and its Chinese translation beside the original scanned page">
 
-### Create custom actions and shortcuts
+### Custom actions and shortcuts
 
-Write your own instructions for recurring tasks such as polishing a draft or summarizing a passage. Choose a provider and assign shortcuts for selected text and OCR, or open the action picker with a single shortcut.
+Save an instruction you use often, such as polishing an email draft. Give the action a name, choose its AI provider, and set separate shortcuts for selected text and OCR if you need them. You can also set a shortcut that opens the action picker so you can choose what to run.
 
 <img src="./assets/custom-actions.png" width="720" alt="Action settings showing a custom polishing prompt, its provider, and shortcut fields">
 
-### Revisit history and favorites
+### History and favorites
 
-Open earlier results from history and star useful translations or answers to find them again. History stays on your Mac.
+Search past results, filter them by action, and star entries you want to revisit. For example, keep new vocabulary in Favorites and reread the explanations later. History stays on your Mac.
 
 <img src="./assets/history-favorites.png" width="720" alt="Translation history with starred vocabulary entries and short definitions">
 
-### Connect your own AI provider
+### Your AI provider
 
-Use a supported AI service, a compatible gateway, or a local agent such as Codex. Each action can use a different provider. Requests go to the provider you configure, and API keys are stored in macOS Keychain.
+Connect a cloud API, a compatible gateway, or a local agent through a compatible endpoint. You can choose which provider each action uses. Requests go to that endpoint, and API keys stay in macOS Keychain.
 
 <img src="./assets/provider-settings.png" width="610" alt="Provider settings for a local agent, with fields for its URL, model, and a masked API key">
 
@@ -72,8 +72,7 @@ GitHub issues are public. Remove API keys, license keys, and private text from a
 
 ## Demo
 
-- [Chat about a passage](https://www.uruc.top/betterwords/assets/demos/ask-anytime-2eab42f4.mp4)
+- [Better Prompt on selected text](https://www.uruc.top/betterwords/assets/demos/expert-prompt-e40f427d.mp4)
 - [Translate a passage and look up a word](https://www.uruc.top/betterwords/assets/demos/translate-50d1f5ef.mp4)
-- [Rewrite a rough prompt](https://www.uruc.top/betterwords/assets/demos/expert-prompt-e40f427d.mp4)
 - [Translate a scanned page with OCR](https://www.uruc.top/betterwords/assets/demos/ocr-photo-05b1c2ca.mp4)
 - [Create a custom action](https://www.uruc.top/betterwords/assets/demos/custom-actions-e4ebdebd.mp4)
