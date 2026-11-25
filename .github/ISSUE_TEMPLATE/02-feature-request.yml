@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement to Better Words.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues before opening a new one. This request is public, so use an example you can share.
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to do?
+      description: Describe your workflow and where you get stuck or spend extra time.
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What would make it easier?
+      description: Describe what you would like to do in Better Words. A concrete example helps.
+    validations:
+      required: true

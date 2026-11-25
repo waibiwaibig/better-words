@@ -1,0 +1,48 @@
+name: Bug report
+description: Report something that went wrong in Better Words.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues before opening a new one. This report is public. Remove API keys, license keys, and private text from examples, screenshots, and logs.
+        For purchase or license help, [contact URUC support](https://www.uruc.top/contact).
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe what you saw and what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the shortcut or action and the app you were using, if relevant. If it happens only sometimes, tell us how often.
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Better Words version
+      description: >-
+        Include the build number if you see it. If the app won't open, use the installer
+        filename. If you have neither, enter Unknown.
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac type
+      placeholder: macOS 15.6 on Apple silicon
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else?
+      description: If relevant, share the provider and model names, a short error message, or a screenshot with private details removed.
